@@ -1,0 +1,48 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ot@ZFS:/home/vagrant[root@ZFS vagrant]# zfs set compression=lzjb mypool/lzjb[1P[1P[1P[1P mypool/lzjbz mypool/lzjbl mypool/lzjbe mypool/lzjb[C[C[C[C[C[C[C[C[1Pzjb[1Pjb[1Pb[Kzle
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# zfs set compression=zle mypool/zlelzjb mypool/lzjb[2P4 mypool/lz4gzip mypool/gzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kzfs listkistget compressratio
+NAME         PROPERTY       VALUE  SOURCE
+mypool       compressratio  1.00x  -
+mypool/gzip  compressratio  1.00x  -
+mypool/lz4   compressratio  1.00x  -
+mypool/lzjb  compressratio  1.00x  -
+mypool/zle   compressratio  1.00x  -
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# zfs list
+NAME          USED  AVAIL     REFER  MOUNTPOINT
+mypool        298K  1.74G     38.8K  /mypool
+mypool/gzip  32.9K  1.74G     32.9K  /mypool/gzip
+mypool/lz4   32.9K  1.74G     32.9K  /mypool/lz4
+mypool/lzjb  32.9K  1.74G     32.9K  /mypool/lzjb
+mypool/zle   32.9K  1.74G     32.9K  /mypool/zle
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# ls
+voina-i-mir.docx
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# сз[K[Kcp voina-i-mir.docx mypool/gzip
+cp: cannot create regular file ‘mypool/gzip’: No such file or directory
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# cp voina-i-mir.docx mypool/gzip/
+cp: cannot create regular file ‘mypool/gzip/’: No such file or directory
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# cp voina-i-mir.docx mypool/gzip//mypool/gzip/
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# cp voina-i-mir.docx /mypool/gzip/[1P/[1P/[1P/[1P/l/z/4/
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# cp voina-i-mir.docx /mypool/lz4/[1P/j/b/
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# cp voina-i-mir.docx /mypool/lzjb/[1Pb/[1Pb/[1Pb/[1P/z/l/e/
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# cp voina-i-mir.docx /mypool/zle/lzjb/[1P4/gzip/[1Pmypool/gzip/[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kzfs list
+NAME          USED  AVAIL     REFER  MOUNTPOINT
+mypool       15.6M  1.73G     38.8K  /mypool
+mypool/gzip  3.86M  1.73G     3.86M  /mypool/gzip
+mypool/lz4   3.87M  1.73G     3.87M  /mypool/lz4
+mypool/lzjb  3.88M  1.73G     3.88M  /mypool/lzjb
+mypool/zle   3.87M  1.73G     3.87M  /mypool/zle
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# уч[K[Kучше[K[K[K[Kexit
+exit
+]0;vagrant@ZFS:~[vagrant@ZFS ~]$ sudo su
+]0;root@ZFS:/home/vagrant[?1034h[root@ZFS vagrant]# exitzfs list[4Pexit
+exit
+]0;vagrant@ZFS:~[vagrant@ZFS ~]$ sudo su[K[K[K[K[K[K[Kexit
+logout
+Connection to 127.0.0.1 closed.
+[1m[7m#[27m[1m[0m                                                                                                                        ]2;root@localhost: ~/ZFS]1;~/ZFS[0m[27m[24m[J[01;32m➜  [36mZFS[00m [K[?1h=[?2004h[?2004l
+[1m[7m#[27m[1m[0m                                                                                                                        ]2;root@localhost: ~/ZFS]1;~/ZFS[0m[27m[24m[J[01;31m➜  [36mZFS[00m [K[?1h=[?2004hssc
+[0msched               script              scsi_mandat         scsi-rescan         scsi_stop                             
+scp                 scriptreplay        scsi_readcap        scsi_satl           scsi_temperature                      
+[JSCREEN_NO           [Jscsi_logging_level  [Jscsi_ready          [Jscsi_start          [J                                    [3A[0m[27m[24m[7Csc[K
+[J[J[0msg_rdac     [Jsg_sync     [Jsha1hmac    [Jsha224hmac  [Jsha256hmac  [Jsha384hmac  [Jsha512hmac  [Jspec        [Jsync      [J[A[0m[27m[24m[7Csc[Ksrcsc [1Cript[?1l>[?2004l
+[J]2;script]1;scriptScript started, file is typescript
+[1m[7m#[27m[1m[0m                                 

@@ -1,0 +1,43 @@
+Script started on 2020-09-21 20:54:09+06:00
+[1m[7m#[27m[1m[0m                                                                                                                        ]2;root@localhost: ~/ZFS]1;~/ZFS[0m[27m[24m[J[01;32m➜  [36mZFS[00m [K[?1h=[?2004hscript pool.txt[15Dexit           [11Dsdlpfjsdfj[8Dkskjf   script test.txt[8Dstop    test.txt[8Dstop        vagrant ssh[?1l>[?2004l
+]2;vagrant ssh]1;vagrantLast login: Mon Sep 21 14:25:07 2020 from 10.0.2.2
+]0;vagrant@ZFS:~[?1034h[vagrant@ZFS ~]$ sudo su
+]0;root@ZFS:/home/vagrant[?1034h[root@ZFS vagrant]# wget -q --no-check-certificate 'https://docs.google.com/uc?export=download&id=1KRBNW33QWqbvbVHa3hLJi vOAt60yukkg' -O zfs_task1.tar.gz
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# wget -q --no-check-certificate 'https://docs.google.com/uc?export=download&id=1KRBNW33QWqbvbVHa3hLJi vOAt60yukkg' -O zfs_task1.tar.gz
+tar xf zfs_task1.tar.gz]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# tar xf zfs_task1.tar.gz
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# ls
+voina-i-mir.docx  [0m[38;5;9mzfs_task1.tar.gz[0m  [38;5;27mzpoolexport[0m
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# tar xf zfs_task1.tar.gz
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# ls
+voina-i-mir.docx  [0m[38;5;9mzfs_task1.tar.gz[0m  [38;5;27mzpoolexport[0m
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# zpool import -d zpoolexport otus
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# sudo zpool status otus
+  pool: otus
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME                                 STATE     READ WRITE CKSUM
+	otus                                 ONLINE       0     0     0
+	  mirror-0                           ONLINE       0     0     0
+	    /home/vagrant/zpoolexport/filea  ONLINE       0     0     0
+	    /home/vagrant/zpoolexport/fileb  ONLINE       0     0     0
+
+errors: No known data errors
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# sudo zpool list | grep otus
+[01;31m[Kotus[m[K     480M  2.09M   478M        -         -     0%     0%  1.00x    ONLINE  -
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# zpool history otus|grep create
+2020-05-15.04:00:58 zpool [01;31m[Kcreate[m[K otus mirror /root/filea /root/fileb
+2020-05-15.04:18:42 zfs [01;31m[Kcreate[m[K otus/hometask2
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# zpool history otus|grep checksum
+2020-05-15.04:05:55 zfs set [01;31m[Kchecksum[m[K=sha256 otus
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# zpool history otus|grep compression
+2020-05-15.04:11:05 zfs set [01;31m[Kcompression[m[K=zle otus
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# exit
+exit
+]0;vagrant@ZFS:~[vagrant@ZFS ~]$ exit
+logout
+Connection to 127.0.0.1 closed.
+[1m[7m#[27m[1m[0m                                                                                                                        ]2;root@localhost: ~/ZFS]1;~/ZFS[0m[27m[24m[J[01;32m➜  [36mZFS[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2020-09-21 21:14:43+06:00

@@ -1,0 +1,30 @@
+Script started on 2020-09-21 21:16:15+06:00
+[1m[7m#[27m[1m[0m                                                                                                                        ]2;root@localhost: ~/ZFS]1;~/ZFS[0m[27m[24m[J[01;32m➜  [36mZFS[00m [K[?1h=[?2004hscript mesage.txt[17Dexit             [13Dvagrant ssh[?1l>[?2004l
+]2;vagrant ssh]1;vagrantLast login: Mon Sep 21 14:54:53 2020 from 10.0.2.2
+]0;vagrant@ZFS:~[?1034h[vagrant@ZFS ~]$ wget -q --no-check-certificate 'https://docs.google.com/uc?export=download&id=1gH8gCL9y7Nd5Ti3IRmplZPF1 XjzxeRAG' -O otus_task2.file
+]0;vagrant@ZFS:~[vagrant@ZFS ~]$ ls
+otus_task2.file  voina-i-mir.docx  [0m[38;5;9mzfs_task1.tar.gz[0m  [38;5;27mzpoolexport[0m
+]0;vagrant@ZFS:~[vagrant@ZFS ~]$ zfs receive otus/storage < otus_task2.file 
+cannot receive new filesystem stream: permission denied
+]0;vagrant@ZFS:~[vagrant@ZFS ~]$ sudo su
+]0;root@ZFS:/home/vagrant[?1034h[root@ZFS vagrant]# zfs receive otus/storage < otus_task2.file 
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# zfs list
+NAME             USED  AVAIL     REFER  MOUNTPOINT
+mypool          15.6M  1.73G     38.8K  /mypool
+mypool/gzip     3.86M  1.73G     3.86M  /mypool/gzip
+mypool/lz4      3.87M  1.73G     3.87M  /mypool/lz4
+mypool/lzjb     3.88M  1.73G     3.88M  /mypool/lzjb
+mypool/zle      3.87M  1.73G     3.87M  /mypool/zle
+otus            4.91M   347M       25K  /otus
+otus/hometask2  1.88M   347M     1.88M  /otus/hometask2
+otus/storage    2.83M   347M     2.83M  /otus/storage
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# cat /otus/storage/task1/file_mess/secret_message
+https://github.com/sindresorhus/awesome
+]0;root@ZFS:/home/vagrant[root@ZFS vagrant]# exit
+exit
+]0;vagrant@ZFS:~[vagrant@ZFS ~]$ exit
+logout
+Connection to 127.0.0.1 closed.
+[1m[7m#[27m[1m[0m                                                                                                                        ]2;root@localhost: ~/ZFS]1;~/ZFS[0m[27m[24m[J[01;32m➜  [36mZFS[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2020-09-21 21:20:29+06:00
