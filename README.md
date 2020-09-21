@@ -121,3 +121,4 @@ XjzxeRAG' -O otus_task2.file
 [root@ZFS vagrant]$ cat /otus/storage/task1/file_mess/secret_message
 https://github.com/sindresorhus/awesome
 ```
+сообщение awesome
